@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  font-family: Lato;
+  display: flex;
+  justify-content: space-evenly; }
+  header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px; }
+    header ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600; }
+  header img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; }
+
+#hero {
+  background-image: url(../images/bkg-hero-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Poppins; }
+  #hero > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px; }
+    #hero > div h1 {
+      font-size: 52px;
+      color: #fff; }
+    #hero > div span {
+      color: #ffb81c;
+      font-size: 0.6em; }
+    #hero > div p {
+      font-family: Lato;
+      color: #fff;
+      font-weight: 300;
+      font-size: 0.8em;
+      width: 80%;
+      text-align: center; }
+    #hero > div > div {
+      display: flex;
+      gap: 10px;
+      font-family: Lato;
+      font-size: 0.8em; }
+      #hero > div > div a {
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        padding: 0.8em;
+        width: 13em; }
+      #hero > div > div :first-child {
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 2px solid #fff; }
+      #hero > div > div :last-child {
+        background-color: #ffb81c; }
+
+#about {
+  font-family: Lato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5%; }
+  #about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em; }
+    #about div h2 {
+      font-size: 2em;
+      font-weight: 900; }
+    #about div p {
+      color: #999999;
+      font-size: 0.8em;
+      width: 70%; }
+
+#projects {
+  font-family: Lato;
+  background: #d9d9d9; }
+  #projects div:nth-child(1) {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    #projects div:nth-child(1) h2 {
+      font-size: 2em;
+      font-weight: 900; }
+    #projects div:nth-child(1) p {
+      color: #999999;
+      font-size: 0.8em; }
+  #projects div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    width: 310px;
+    height: 310px; }
+
+#testimonials {
+  font-family: Lato;
+  color: #fff;
+  padding: 3%;
+  background-image: url(../images/bkg-testimonial.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; }
+  #testimonials div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    #testimonials div h2 {
+      font-size: 2em;
+      font-weight: 900; }
+    #testimonials div img {
+      object-fit: contain;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px; }
+    #testimonials div div {
+      width: 80%;
+      padding: 3%;
+      text-align: center;
+      background: #6a4d8a; }
+      #testimonials div div p {
+        font-size: 0.8em;
+        font-weight: 400; }
+    #testimonials div p {
+      font-weight: 900;
+      font-size: 1em; }
+    #testimonials div :nth-child(5) {
+      letter-spacing: 5px; }

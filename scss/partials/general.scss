@@ -1,0 +1,16 @@
+@mixin h2-style {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+
+@mixin p {
+  color: lighten($clr-black, 60%);
+  font-size: 0.8em;
+}
+
+@mixin img-projects {
+  object-fit: cover;
+  width: 310px;
+  height: 310px;
+}

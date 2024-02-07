@@ -1,0 +1,240 @@
+// iMPORTS
+
+// partial files
+@import "./partials/colors.scss";
+@import "./partials/general.scss";
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+// --------
+// Reset
+// --------
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// ----------
+
+header {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+
+  font-family: Lato;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    li a {
+      text-decoration: none;
+      color: $clr-white;
+
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+#hero {
+  background-image: url(../images/bkg-hero-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  font-family: Poppins;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 26px;
+
+    h1 {
+      font-size: 52px;
+      color: $clr-white;
+    }
+
+    & span {
+      color: $clr-yellow;
+      font-size: 0.6em;
+    }
+
+    p {
+      font-family: Lato;
+      color: $clr-white;
+      font-weight: 300;
+      font-size: 0.8em;
+
+      width: 80%;
+      text-align: center;
+    }
+
+    & > div {
+      display: flex;
+      gap: 10px;
+
+      font-family: Lato;
+      font-size: 0.8em;
+
+      a {
+        text-decoration: none;
+        text-align: center;
+
+        color: $clr-white;
+        padding: 0.8em;
+        width: 13em;
+      }
+      :first-child {
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 2px solid $clr-white;
+      }
+      :last-child {
+        background-color: $clr-yellow;
+      }
+    }
+  }
+}
+
+#about {
+  font-family: Lato;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 5%;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3em;
+
+    h2 {
+      @include h2-style;
+    }
+
+    p {
+      @include p;
+
+      width: 70%;
+    }
+  }
+}
+
+#projects {
+  font-family: Lato;
+
+  background: $clr-lightgrey;
+
+  div:nth-child(1) {
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    h2 {
+      @include h2-style;
+    }
+
+    p {
+      @include p;
+    }
+  }
+
+  div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+
+    @include img-projects;
+  }
+}
+
+#testimonials {
+  font-family: Lato;
+  color: $clr-white;
+
+  padding: 3%;
+
+  background-image: url(../images/bkg-testimonial.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h2 {
+      @include h2-style;
+    }
+
+    img {
+      object-fit: contain;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+    }
+    div {
+      width: 80%;
+      padding: 3%;
+      text-align: center;
+      
+      background: $clr-purple;
+
+      p{ 
+        font-size: 0.8em;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      font-weight: 900;
+      font-size: 1em;
+    }
+    :nth-child(5) {
+      letter-spacing: 5px;
+    }
+  }
+}
+
+
