@@ -72,8 +72,15 @@ header {
       #hero > div > div :last-child {
         background-color: #ffb81c; }
 
+#about,
+#projects,
+#testimonials,
+#services,
+#latest-news,
+#contact {
+  font-family: Lato; }
+
 #about {
-  font-family: Lato;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,8 +101,7 @@ header {
       width: 70%; }
 
 #projects {
-  font-family: Lato;
-  background: #d9d9d9; }
+  background: repeating-linear-gradient(-45deg, rgba(204, 204, 204, 0.5), rgba(204, 204, 204, 0.5) 1px, rgba(238, 238, 238, 0.5) 1px, rgba(238, 238, 238, 0.5) 10px); }
   #projects div:nth-child(1) {
     padding: 3%;
     display: flex;
@@ -119,7 +125,6 @@ header {
     height: 310px; }
 
 #testimonials {
-  font-family: Lato;
   color: #fff;
   padding: 3%;
   background-image: url(../images/bkg-testimonial.jpg);
@@ -154,3 +159,146 @@ header {
       font-size: 1em; }
     #testimonials div :nth-child(5) {
       letter-spacing: 5px; }
+
+#services {
+  padding: 5%; }
+  #services div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; }
+    #services div > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-align: center; }
+      #services div > div h2 {
+        font-size: 2em;
+        font-weight: 900; }
+      #services div > div p {
+        color: #999999;
+        font-size: 0.8em; }
+    #services div :nth-of-type(2) {
+      display: flex;
+      flex-direction: row; }
+      #services div :nth-of-type(2) div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; }
+      #services div :nth-of-type(2) p {
+        width: 80%; }
+      #services div :nth-of-type(2) :nth-child(1) h3 {
+        color: #f18b6d;
+        font-weight: 900;
+        font-size: 1.3em; }
+      #services div :nth-of-type(2) :nth-child(2) h3 {
+        color: #ffb81c;
+        font-weight: 900;
+        font-size: 1.3em; }
+      #services div :nth-of-type(2) :nth-child(3) h3 {
+        color: #6a4d8a;
+        font-size: 1.3em;
+        font-weight: 900; }
+
+#latest-news {
+  padding: 5%;
+  min-height: 100vh;
+  background-color: #222f36; }
+  #latest-news :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; }
+    #latest-news :nth-child(1) p {
+      color: #999999;
+      font-size: 0.8em; }
+    #latest-news :nth-child(1) :nth-child(1) {
+      display: flex;
+      justify-content: center;
+      gap: 20px; }
+      #latest-news :nth-child(1) :nth-child(1) h2 {
+        font-size: 2em;
+        font-weight: 900;
+        color: #fff; }
+      #latest-news :nth-child(1) :nth-child(1) a {
+        text-decoration: none;
+        color: #fff;
+        background: #ffb81c;
+        padding: 8px 20px;
+        font-size: 0.8em;
+        font-weight: 700;
+        border-radius: 3px; }
+    #latest-news :nth-child(1) :nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; }
+      #latest-news :nth-child(1) :nth-child(2) div {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        background: #fff; }
+        #latest-news :nth-child(1) :nth-child(2) div img {
+          width: fit-content;
+          height: 220px;
+          object-fit: cover; }
+        #latest-news :nth-child(1) :nth-child(2) div a {
+          background: none;
+          text-decoration: none;
+          color: #ffb81c; }
+        #latest-news :nth-child(1) :nth-child(2) div > div {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: start;
+          padding: 5%;
+          text-align: start; }
+          #latest-news :nth-child(1) :nth-child(2) div > div h3 {
+            font-weight: 700;
+            font-size: 1.5em;
+            color: #5e5e5e;
+            text-transform: capitalize; }
+
+#contact {
+  min-height: 100vh;
+  padding: 5%; }
+  #contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; }
+    #contact div h2 {
+      font-size: 2em;
+      font-weight: 900;
+      color: #5e5e5e; }
+    #contact div div {
+      display: flex;
+      flex-direction: row;
+      color: #919191; }
+      #contact div div > div {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center; }
+        #contact div div > div :nth-child(1) {
+          color: #ffb81c;
+          border-right: 1px solid #d9d9d9;
+          padding: 3%; }
+    #contact div div {
+      width: 100%; }
+      #contact div div form {
+        width: 100%;
+        display: block; }
+        #contact div div form label {
+          display: block; }
+        #contact div div form input {
+          width: 100%;
+          border: 1px solid #d9d9d9;
+          padding: 10px; }
+        #contact div div form textarea {
+          width: 100%;
+          border: 1px solid #d9d9d9;
+          padding: 10px; }
