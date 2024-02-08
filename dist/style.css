@@ -77,8 +77,13 @@ header {
 #testimonials,
 #services,
 #latest-news,
-#contact {
+#contact,
+#tags,
+footer {
   font-family: Lato; }
+
+#counter {
+  font-family: Poppins; }
 
 #about {
   display: flex;
@@ -226,13 +231,18 @@ header {
         font-weight: 900;
         color: #fff; }
       #latest-news :nth-child(1) :nth-child(1) a {
+        display: flex;
+        gap: 5px;
         text-decoration: none;
         color: #fff;
         background: #ffb81c;
-        padding: 8px 20px;
+        padding: 8px 18px;
         font-size: 0.8em;
         font-weight: 700;
         border-radius: 3px; }
+        #latest-news :nth-child(1) :nth-child(1) a img {
+          width: 0.9em;
+          object-fit: contain; }
     #latest-news :nth-child(1) :nth-child(2) {
       display: flex;
       flex-direction: row;
@@ -240,19 +250,25 @@ header {
       #latest-news :nth-child(1) :nth-child(2) div {
         display: flex;
         flex-direction: column;
-        height: 500px;
         background: #fff; }
         #latest-news :nth-child(1) :nth-child(2) div img {
           width: fit-content;
           height: 220px;
           object-fit: cover; }
         #latest-news :nth-child(1) :nth-child(2) div a {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
           background: none;
           text-decoration: none;
-          color: #ffb81c; }
+          color: #ffb81c;
+          padding: 0; }
+          #latest-news :nth-child(1) :nth-child(2) div a img {
+            object-fit: contain;
+            width: 1em; }
         #latest-news :nth-child(1) :nth-child(2) div > div {
           display: flex;
-          justify-content: space-evenly;
+          justify-content: center;
           align-items: start;
           padding: 5%;
           text-align: start; }
@@ -262,43 +278,142 @@ header {
             color: #5e5e5e;
             text-transform: capitalize; }
 
+#counter {
+  background-image: url(../images/bkg-counter.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 3%;
+  color: #fff;
+  text-align: center; }
+  #counter > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #counter > div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #counter > div div h2 {
+        font-size: 3em; }
+      #counter > div div p {
+        text-transform: uppercase;
+        font-weight: 900; }
+      #counter > div div:nth-child(2) {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        padding: 0 10% 0 10%;
+        margin: 0 5% 0 5%; }
+
 #contact {
   min-height: 100vh;
-  padding: 5%; }
-  #contact div {
+  padding: 5% 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  #contact > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 50px; }
-    #contact div h2 {
+    color: #919191; }
+    #contact > div h2 {
       font-size: 2em;
       font-weight: 900;
       color: #5e5e5e; }
-    #contact div div {
+    #contact > div div {
+      width: 100%;
       display: flex;
       flex-direction: row;
-      color: #919191; }
-      #contact div div > div {
-        flex-direction: row;
-        width: 100%;
-        justify-content: center; }
-        #contact div div > div :nth-child(1) {
+      gap: 20px; }
+      #contact > div div > div {
+        display: flex;
+        flex-direction: row; }
+        #contact > div div > div h5 {
           color: #ffb81c;
+          font-size: smaller;
+          font-weight: 400;
           border-right: 1px solid #d9d9d9;
-          padding: 3%; }
-    #contact div div {
-      width: 100%; }
-      #contact div div form {
+          padding: 0 4% 0 0;
+          margin: 0 2% 0 0; }
+        #contact > div div > div p {
+          font-size: 0.8em;
+          line-height: 1.5; }
+        #contact > div div > div :nth-child(3) {
+          display: flex;
+          justify-content: end;
+          gap: 10px; }
+        #contact > div div > div img {
+          object-fit: contain;
+          width: 0.9em; }
+      #contact > div div > form {
         width: 100%;
-        display: block; }
-        #contact div div form label {
-          display: block; }
-        #contact div div form input {
-          width: 100%;
-          border: 1px solid #d9d9d9;
-          padding: 10px; }
-        #contact div div form textarea {
-          width: 100%;
-          border: 1px solid #d9d9d9;
-          padding: 10px; }
+        display: flex;
+        flex-direction: column;
+        gap: 6px; }
+        #contact > div div > form > div {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          font-size: 0.9em; }
+          #contact > div div > form > div div {
+            display: flex;
+            flex-direction: column;
+            gap: 6px; }
+            #contact > div div > form > div div input {
+              border: 1px solid #d9d9d9;
+              border-radius: 2px;
+              padding: 6px; }
+        #contact > div div > form :nth-last-child(2) {
+          display: flex;
+          flex-direction: column; }
+          #contact > div div > form :nth-last-child(2) textarea {
+            border: 1px solid #d9d9d9;
+            border-radius: 2px; }
+        #contact > div div > form :nth-child(3) {
+          display: flex;
+          justify-content: end; }
+          #contact > div div > form :nth-child(3) [value] {
+            background-color: #ffb81c;
+            border: none;
+            border-radius: 4px;
+            padding: 1% 6%;
+            color: #fff; }
+
+#tags {
+  padding: 3%;
+  background: #292825; }
+  #tags div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%; }
+    #tags div div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #tags div div h3 {
+        font-size: large;
+        font-weight: 900;
+        color: #fff; }
+      #tags div div div {
+        padding: 5% 0;
+        color: #919191;
+        font-size: 0.7em;
+        line-height: 2.5; }
+        #tags div div div p {
+          width: 40%; }
+          #tags div div div p span {
+            margin-right: 10px; }
+
+footer {
+  width: 100%;
+  padding: 2%;
+  background-color: #1c1b19;
+  color: #fff;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer span {
+    color: #919191; }
