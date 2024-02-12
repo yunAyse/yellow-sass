@@ -193,8 +193,6 @@ footer {
   div:nth-child(2) {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: auto;
 
     @include img-projects;
   }
@@ -495,7 +493,7 @@ footer {
       width: 100%;
       display: flex;
       flex-direction: row;
-      gap : 20px;
+      gap: 20px;
 
       > div {
         // individual contacts
@@ -523,7 +521,6 @@ footer {
           display: flex;
           justify-content: end;
           gap: 10px;
-
         }
 
         img {
@@ -534,20 +531,22 @@ footer {
 
       > form {
         width: 100%;
-        
+
         display: flex;
         flex-direction: column;
         // background-color: blue;
         gap: 6px;
-        
-        > div { // input containter
+
+        > div {
+          // input containter
           display: flex;
           flex-direction: row;
           gap: 10px;
 
           font-size: 0.9em;
 
-          & div { // label and input div
+          & div {
+            // label and input div
             display: flex;
             flex-direction: column;
             gap: 6px;
@@ -570,19 +569,20 @@ footer {
           }
         }
 
-        :nth-child(3) { // submit div [+unwanted subject]
+        :nth-child(3) {
+          // submit div [+unwanted subject]
           display: flex;
           justify-content: end;
-        
-        [value] { // submit input
-          background-color: $clr-yellow;
-          border: none;
-          border-radius: 4px;
-          padding: 1% 6%;
-          color: $clr-white;
-          
+
+          [value] {
+            // submit input
+            background-color: $clr-yellow;
+            border: none;
+            border-radius: 4px;
+            padding: 1% 6%;
+            color: $clr-white;
+          }
         }
-      }
       }
     }
   }
@@ -641,5 +641,16 @@ footer {
   align-items: center;
   span {
     color: $clr-grey2;
+  }
+}
+
+
+
+@media (max-width: 35em) {
+  #projects {
+    div:nth-child(2) {
+      flex-direction: column;
+
+    }
   }
 }
